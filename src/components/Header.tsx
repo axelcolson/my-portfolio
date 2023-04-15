@@ -14,18 +14,16 @@ const Header: React.FC<HeaderProps> = (props) => {
 
   return (
     <header className="header">
-      <div className="header-content">
-        <h1 className="header-name">{name}</h1>
-        <h2 className="header-title">{title}</h2>
-        <div className="header-contact">
-          <p>Email: {email}</p>
-          <p>Phone: {phone}</p>
-          <a href={linkedIn} target="_blank" rel="noreferrer">
-            My LinkedIn
-          </a>
+      <div id='left-side-header'>
+        <div id='left-side-container'>
+            <h1 id='job-title'>Full Stack Developer</h1>
+            <p id='job-sub-p'>Blending the art of front-end design with the technical precision of back-end development.</p>
+            <div id='profile-img-container'></div>
         </div>
       </div>
+      <div id='right-side-header'></div>
     </header>
+    
   );
 };
 

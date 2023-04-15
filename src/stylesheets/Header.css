@@ -1,57 +1,67 @@
 .header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-image: url('../assets/header-background.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    color: #ffffff;
-    width: 100%;
-    height: 100vh; /* Full height */
-    padding: 0 20px;
-    box-sizing: border-box;
-    position: relative;
-  }
-  
-  .header::before {
-    content: "";
-    background-color: rgba(0, 0, 0, 0.6);
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-  }
-  
-  .header-content {
-    text-align: center;
-    max-width: 800px;
-    position: relative;
-    z-index: 2;
-  }
-  
-  .header-name {
-    font-size: 2.5rem;
-    font-weight: bold;
-    margin-bottom: 10px;
-  }
-  
-  .header-title {
-    font-size: 1.8rem;
-    margin-bottom: 20px;
-  }
-  
-  .header-contact {
-    font-size: 1.1rem;
-  }
-  
-  .header-contact p {
-    margin-bottom: 10px;
-  }
-  
-  .header-contact p:last-child {
-    margin-bottom: 0;
-  }
-  
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  height: 100vh; /* Full height */
+  box-sizing: border-box;
+  position: relative;
+  background-color: var(--main-background);
+}
+
+#left-side-header {
+  width: 68%;
+  height: 800px;
+  background-color: var(--main-dark-color);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#left-side-container {
+  width: 60%;
+  position: relative;
+}
+
+#job-title {
+  color:var(--main-light-color);
+  font-size: 6.4rem;
+  width: 50%;
+  line-height: 1;
+  text-align: left;
+}
+
+#job-sub-p {
+  font-size: 2.8rem;
+  text-align: left;
+  width: 50%;
+  color:var(--main-background);
+}
+
+#profile-img-container {
+  width: 40rem;
+  height: 40rem;
+  background-image: url("../assets/header-profile.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 50%; /* Center the image vertically */
+  left: 100%; /* Move the image to the right edge of the left-side-header */
+  transform: translate(0, -50%); /* Adjust the position to the center of the image */
+  z-index: 10; /* Ensure the image is above other elements */
+   /* Optional: make the image round */
+}
+
+#profile-img-container::after{
+  border: 1px solid black;
+  width: 42rem;
+  height: 40rem;
+}
+
+#right-side-header {
+  width: 32%;
+  height: 800px;
+  background-color: var(--main-light-color);
+}
