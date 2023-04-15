@@ -11,9 +11,9 @@
 
 #left-side-header {
   width: 68%;
-  height: 800px;
+  height: 64rem;
   background-color: var(--main-dark-color);
-
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -22,6 +22,19 @@
 #left-side-container {
   width: 60%;
   position: relative;
+}
+
+#home-btn {
+  text-decoration: none;
+  color: var(--main-light-color);
+  position: absolute;
+  letter-spacing: 0.18rem;
+  font-weight: 600;
+  top: 1.5rem;
+  left: 1.5rem;
+  font-size: 2.4rem;
+  text-decoration: none;
+  z-index: 11;
 }
 
 #job-title {
@@ -35,7 +48,7 @@
 #job-sub-p {
   font-size: 2.8rem;
   text-align: left;
-  width: 50%;
+  width: 64%;
   color:var(--main-background);
 }
 
@@ -50,18 +63,23 @@
   top: 50%; /* Center the image vertically */
   left: 100%; /* Move the image to the right edge of the left-side-header */
   transform: translate(0, -50%); /* Adjust the position to the center of the image */
-  z-index: 10; /* Ensure the image is above other elements */
-   /* Optional: make the image round */
+  z-index: 11; /* Ensure the image is above other elements */
 }
 
-#profile-img-container::after{
-  border: 1px solid black;
-  width: 42rem;
+#floating-square {
+  position: absolute;
+  width: 40rem;
   height: 40rem;
+  border: 2px solid #FCFCFC; /* Set the background color of the square */
+  top: 50%; /* Center the image vertically */
+  left: 100%; /* Move the image to the right edge of the left-side-header */
+  transform: translate(10%, -40%); 
+  z-index: 1; /* Ensure the square is behind the profile image */
 }
+
 
 #right-side-header {
   width: 32%;
-  height: 800px;
+  height: 64rem;
   background-color: var(--main-light-color);
 }

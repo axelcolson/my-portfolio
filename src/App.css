@@ -5,23 +5,12 @@
 
 html {
   font-size: 10px;
-  color: var(--main-dark-color: #616163);
+  color: var(--main-dark-color);
 }
 
 * {
   margin: 0;
   padding: 0;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
 }
 
 .App-header {
@@ -36,7 +25,7 @@ html {
 }
 
 :root {
-  --main-dark-color: #616163;
-  --main-light-color: #44FFD2;
-  --main-background: #DAF5FF;
+  --main-dark-color: #042A2B;
+  --main-light-color: #F1D302;
+  --main-background: #5EB1BF;
 }
