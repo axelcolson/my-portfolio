@@ -26,6 +26,8 @@ html {
 
 :root {
   --main-dark-color: #042A2B;
+  --main-dark-background: #1d3f40;
+  --main-light-background: #cdd4d5;
   --main-light-color: #F1D302;
-  --main-background: #5EB1BF;
+  --main-text: #5EB1BF;
 }

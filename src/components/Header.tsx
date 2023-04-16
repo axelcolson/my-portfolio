@@ -14,16 +14,22 @@ const Header: React.FC<HeaderProps> = (props) => {
 
   return (
     <header className="header">
-      <a href="#" id='home-btn'>axelcolson</a>
-      <div id='left-side-header'>
-        <div id='left-side-container'>
-            <h1 id='job-title'>Full Stack Developer</h1>
-            <p id='job-sub-p'>Blending the art of front-end design with the technical precision of back-end development.</p>
-            <div id='profile-img-container'></div>
-            <div id='floating-square'></div>
+      <div id='header-container'>
+        <a href="#" id='home-btn'>axelcolson</a>
+        <div id='left-side-header'>
+          <div id='left-side-container'>
+              <h1 id='job-title'>Full Stack Developer</h1>
+              <p id='job-sub-p'>Blending the art of front-end design with the technical precision of back-end development.</p>
+              <div id='button-container'>
+                <a href='#' className='header-button' id='learn-more-btn-header'>Learn more</a>
+                <a href='#' className='header-button' id='contact-me-btn-header'>Contact me</a>
+              </div>
+              <div id='profile-img-container'></div>
+              <div id='floating-square'></div>
+          </div>
         </div>
+        <div id='right-side-header'></div>
       </div>
-      <div id='right-side-header'></div>
     </header>
     
   );
