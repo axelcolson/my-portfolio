@@ -27,6 +27,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-size: 1.6rem;
 }
 
 h1 {
@@ -42,7 +43,7 @@ ul {
   grid-auto-columns: max-content;
   column-gap: var(--col-gap);
   list-style: none;
-  width: min(60rem, 90%);
+  width: min(80rem, 90%);
   margin-inline: auto;
 }
 
