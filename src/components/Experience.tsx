@@ -11,6 +11,7 @@ interface ExperienceProps {
 
 
 const Experience: React.FC<ExperienceProps> = (props) => {
+  // eslint-disable-next-line
     const { name, title, email, phone, linkedIn } = props;
   
     return (
