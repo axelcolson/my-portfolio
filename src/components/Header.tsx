@@ -22,7 +22,7 @@ const Header: React.FC<HeaderProps> = (props) => {
               <h1 id='job-title'>Full Stack Developer</h1>
               <p id='job-sub-p'>Blending the art of front-end design with the technical precision of back-end development.</p>
               <div id='button-container'>
-                <a href='https://www.linkedin.com/in/axel-colson-a78814154/' className='header-button' id='learn-more-btn-header'>Learn more</a>
+                <a href='https://www.linkedin.com/in/axel-colson-a78814154/' target='_blank' className='header-button' id='learn-more-btn-header' rel="noreferrer">Learn more</a>
                 <a href='mailto:axel_colson@hotmail.com' className='header-button' id='contact-me-btn-header'>Contact me</a>
               </div>
               <div id='profile-img-container'></div>
