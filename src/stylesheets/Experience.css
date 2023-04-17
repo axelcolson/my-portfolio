@@ -1,0 +1,20 @@
+.experience{
+  background-color: var(--main-dark-background);
+  color:var(--main-light-background);
+}
+
+#experience-container{
+    height: 100rem;
+}
+
+#experience-title{
+    text-align: left;
+    padding: 16rem 0 0 12rem;
+    font-size: 4.8rem;
+    color: aliceblue;
+}
+
+#title-sub {
+    font-size: 1.6rem;
+}
+

@@ -5,7 +5,7 @@
 
 html {
   font-size: 10px;
-  color: var(--main-dark-color);
+  color: var(--main-dark-background);
 }
 
 * {
@@ -28,6 +28,22 @@ html {
   --main-dark-color: #042A2B;
   --main-dark-background: #1d3f40;
   --main-light-background: #cdd4d5;
-  --main-light-color: #F1D302;
-  --main-text: #5EB1BF;
+  --main-yellow: #F1D302;
+  --main-header-text: #5EB1BF;
+}
+
+:root {
+  --shadow: #43a047;
+  --scrollbarBG: #eee;
+  --thumbBG: #66bb6a;
+}
+::-webkit-scrollbar {
+  width: 16px;
+}
+::-webkit-scrollbar-track {
+  background: var(--main-yellow);
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--main-dark-background);
+  box-shadow: 0 -100vh 0 100vh var(--main-dark-color), 0 0 15px 5px black;
 }

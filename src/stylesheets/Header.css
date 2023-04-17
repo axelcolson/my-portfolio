@@ -1,6 +1,5 @@
 .header {
   width: 100%;
-  height: 100vh; /* Full height */
   box-sizing: border-box;
   position: relative;
   background-color: var(--main-dark-background);
@@ -25,7 +24,7 @@
 
 #right-side-header {
   width: 32%;
-  background-color: var(--main-light-color);
+  background-color: var(--main-yellow);
   background-image: radial-gradient(var(--main-dark-color) 1px, transparent 0);
   background-size: 6rem 6rem;
 }
@@ -38,7 +37,7 @@
 
 #home-btn {
   text-decoration: none;
-  color: var(--main-light-color);
+  color: var(--main-yellow);
   position: absolute;
   letter-spacing: 0.18rem;
   font-weight: 600;
@@ -50,7 +49,7 @@
 }
 
 #job-title {
-  color:var(--main-light-color);
+  color:var(--main-yellow);
   font-size: 6.4rem;
   width: 50%;
   line-height: 1;
@@ -61,7 +60,7 @@
   font-size: 2.8rem;
   text-align: left;
   width: 64%;
-  color:var(--main-text);
+  color:var(--main-header-text);
   margin-top: 2.8rem;
   margin-bottom: 3.6rem;
 }
@@ -78,36 +77,32 @@
 
 .header-button {
   padding: 0.8rem 1.6rem;
-  border: 1px solid var(--main-light-color);
+  border: 1px solid var(--main-yellow);
   text-decoration: none;
   font-size: 1.8rem;
   border-radius: 12rem;
-  transition: ease-in 0.3s;
-}
-
-.header-button:hover{
-  background-color: var(--main-light-color);
-  color: var(--main-dark-color);
+  transition: 0.3s;
 }
 
 #learn-more-btn-header{
-  background-color: var(--main-light-color);
+  background-color: var(--main-yellow);
   color: var(--main-dark-color);
 }
 
 #learn-more-btn-header:hover{
   background-color: var(--main-dark-color);
-  color: var(--main-light-color);
+  color: var(--main-yellow);
+  box-shadow: 0 0 11px var(--main-yellow); 
 }
 
 #contact-me-btn-header{
   background-color: var(--main-dark-color);
-  color: var(--main-light-color);
+  color: var(--main-yellow);
 }
 
 #contact-me-btn-header:hover{
   
-  background-color: var(--main-light-color);
+  background-color: var(--main-yellow);
   color: var(--main-dark-color);
 }
 
@@ -124,6 +119,7 @@
   left: 100%; /* Move the image to the right edge of the left-side-header */
   transform: translate(0, -50%); /* Adjust the position to the center of the image */
   z-index: 11; /* Ensure the image is above other elements */
+  transition: 1s;
 }
 
 #floating-square {
