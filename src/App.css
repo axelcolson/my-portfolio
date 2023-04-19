@@ -14,7 +14,6 @@ html {
 }
 
 .App-header {
-  background-color: #282c34;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -46,4 +45,16 @@ html {
 ::-webkit-scrollbar-thumb {
   background-color: var(--main-dark-background);
   box-shadow: 0 -100vh 0 100vh var(--main-dark-color), 0 0 15px 5px black;
+}
+
+@media screen  and (max-width: 1440px){
+  html {
+    font-size: 8px;
+  }
+}
+
+@media screen  and (max-width: 1080px){
+  html {
+    font-size: 7px;
+  }
 }

@@ -15,10 +15,10 @@
 #left-side-header {
   width: 68%;
   background-color: var(--main-dark-color);
-  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 0 4rem;
 }
 
 
@@ -27,13 +27,13 @@
   background-color: var(--main-yellow);
   background-image: radial-gradient(var(--main-dark-color) 1px, transparent 0);
   background-size: 6rem 6rem;
-}
-
-
-#left-side-container {
-  width: 60%;
   position: relative;
+  display: flex;
+  justify-content: center;
+
 }
+
+
 
 #home-btn {
   text-decoration: none;
@@ -116,7 +116,7 @@
   background-repeat: no-repeat;
   position: absolute;
   top: 50%; /* Center the image vertically */
-  left: 100%; /* Move the image to the right edge of the left-side-header */
+  left: -50%; /* Move the image to the right edge of the left-side-header */
   transform: translate(0, -50%); /* Adjust the position to the center of the image */
   z-index: 11; /* Ensure the image is above other elements */
   transition: 1s;
@@ -128,8 +128,76 @@
   height: 46rem;
   border: 2px solid #FCFCFC; /* Set the background color of the square */
   top: 50%; /* Center the image vertically */
-  left: 100%; /* Move the image to the right edge of the left-side-header */
+  left: -50%; /* Move the image to the right edge of the left-side-header */
   transform: translate(10%, -40%); 
   z-index: 1; /* Ensure the square is behind the profile image */
 }
 
+
+@media screen and (max-width: 840px) {
+  #header-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;  
+    height: 100rem;
+    width: 100%;
+  }
+  #left-side-header {
+    width: 100%;
+    height: 60%;
+    background-color: var(--main-dark-color);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  
+  #left-side-container {
+    width: 80%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #button-container{
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    justify-content: space-around;
+  }
+
+  #right-side-header {
+    width: 100%;
+    height: 40%;
+    background-color: var(--main-yellow);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #profile-img-container {
+    position: relative;
+    top: 0; /* Center the image vertically */
+    left: 0; /* Move the image to the right edge of the left-side-header */
+    transform: translate(0, 0); 
+    width: 32rem;
+    height: 32rem;
+    border: 2px solid #FCFCFC;
+    z-index: 1;
+  }
+
+  #floating-square {
+    top: 0; /* Center the image vertically */
+    left: 0; /* Move the image to the right edge of the left-side-header */
+    transform: translate(0, 0); 
+    width: 32rem;
+    height: 32rem;
+    border: 2px solid #FCFCFC;
+    z-index: 1;
+    display: none;
+  }
+}
