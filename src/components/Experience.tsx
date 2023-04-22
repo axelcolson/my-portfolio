@@ -22,29 +22,24 @@ const Experience: React.FC<ExperienceProps> = (props) => {
             </h2>
             <ul>
                 <li>
-                    <div className="date">2002</div>
-                    <div className="title">Title 1</div>
-                    <div className="descr">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas itaque hic quibusdam fugiat est numquam harum, accusamus suscipit consequatur laboriosam!</div>
+                    <div className="date">April 2022</div>
+                    <div className="title">Be-Housing</div>
+                    <div className="descr">In april 2022, I got hired by Be-Housing as a full stack developer.</div>
                 </li>
                 <li>
-                    <div className="date">2007</div>
-                    <div className="title">Title 2</div>
-                    <div className="descr">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos adipisci nobis nostrum vero nihil veniam.</div>
+                    <div className="date">Januari 2022</div>
+                    <div className="title">Masters degree in Computer Science</div>
+                    <div className="descr">Left program after two years to pursue career goals.</div>
                 </li>
                 <li>
-                    <div className="date">2012</div>
-                    <div className="title">Title 3</div>
-                    <div className="descr">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga minima consequuntur soluta placeat iure totam commodi repellendus ea delectus, libero fugit quod reprehenderit, sequi quo, et dolorum saepe nulla hic.</div>
+                    <div className="date">Januari 2020</div>
+                    <div className="title">Professional Bachelor's degree in Computer Science</div>
+                    <div className="descr">I graduated at Hogeschool PXL with a bachelor's degree in computer science.</div>
                 </li>
                 <li>
-                    <div className="date">2017</div>
-                    <div className="title">Title 4</div>
-                    <div className="descr">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit, cumque.</div>
-                </li>
-                <li>
-                    <div className="date">2022</div>
-                    <div className="title">Title 5</div>
-                    <div className="descr">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit, non.</div>
+                    <div className="date">Juni 2017</div>
+                    <div className="title">High school degree</div>
+                    <div className="descr">I graduated at VIIO Humaniora in Latin: Modern Languages</div>
                 </li>
             </ul>
         </div>
